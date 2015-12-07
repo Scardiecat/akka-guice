@@ -1,2 +1,2 @@
-# akka-guice
+# styx-akka-guice
 guice integration for akka 
