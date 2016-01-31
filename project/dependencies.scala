@@ -3,7 +3,7 @@ import sbt._
 object Dependencies {
 
   object Version {
-    val akka = "2.4.0"
+    val akka = "2.4.1"
   }
 
   lazy val akka_guice = common  ++ injector
@@ -13,10 +13,6 @@ object Dependencies {
     "com.typesafe.akka" %% "akka-actor" % Version.akka,
     "com.typesafe.akka" %% "akka-cluster" % Version.akka,
     "com.typesafe.akka" %% "akka-slf4j" % Version.akka
-  )
-  
-  val tests = Seq(
-    "com.typesafe.akka" %% "akka-testkit" % Version.akka % "test"
   )
 
   val injector = Seq(
